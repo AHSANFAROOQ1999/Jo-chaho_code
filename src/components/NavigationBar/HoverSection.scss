@@ -1,0 +1,45 @@
+// Color Pallete 🖌
+
+// @import "../../../../styles/ColorScheme.scss";
+
+///////////////////////////////////////////
+///
+.two-level-category {
+  display: flex;
+  // height: 270px;
+  max-height: calc(100vh - 215px);
+  overflow-y: auto;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 20px;
+  > a {
+    flex-basis: 200px;
+    padding: 0 15px;
+  }
+  .two-level-text {
+    font-style: normal;
+    text-align: start;
+    font-weight: 700;
+    font-size: 15px;
+    color: #4d4d4d;
+    padding: 5px 0px;
+    margin-top: 20px;
+  }
+
+  .three-level-category {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 10px;
+
+    .three-level-text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      margin: 5px 0px;
+      // padding: 5px 0px;
+    }
+  }
+}

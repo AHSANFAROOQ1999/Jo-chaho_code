@@ -1,0 +1,60 @@
+@import "./styles/ColorScheme.scss";
+@import "./styles/MajorResponsive.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+///////////////////////////////////////////
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.App {
+  min-height: 500px;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-black;
+}
+
+a:hover {
+  color: $primary-grey;
+}
+
+p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: $primary-black;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(201, 195, 195);
+}
+
+*::-webkit-scrollbar {
+  height: 3px;
+  width: 3px;
+}

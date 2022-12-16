@@ -1,0 +1,138 @@
+// Color Pallete 🖌
+
+@import "../../styles/ColorScheme.scss";
+
+///////////////////////////////////////////
+
+.product-wrapper {
+  background-color: $primary-white;
+  position: relative;
+  padding: 0 5px;
+
+  .grid-item-image {
+    height: 0;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+    width: 100%;
+
+    .product-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  .product-title {
+    text-transform: capitalize;
+    margin-top: 25px;
+    width: 100%;
+    overflow: hidden;
+    font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: $primary-black;
+    text-overflow: ellipsis;
+text-align: start;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    // font-weight: 400;
+  }
+
+  .product-price {
+    font-weight: 700;
+font-size: 18px;
+line-height: 32px;
+    // font-weight: 600;
+    // font-size: 14px;
+    letter-spacing: -0.01em;
+    color: $primary-black;
+  }
+
+  .btn-1 {
+    padding: 12px;
+    width: 48px;
+    height: 48px; 
+    background: #0754D2;
+    border-radius: 8px;
+    font-size: 11px !important;
+  }
+
+  .btn-1:hover {
+    background-color: $primary-teal-color;
+    color: $primary-white;
+  }
+
+  .product-price.sale-price {
+    color: $primary-red;
+    .original-price {
+      color: #9d9d9d;
+      font-weight: normal;
+
+      font-weight: 300;
+      margin-right: 5px;
+      text-decoration: line-through;
+      font-size: 12px;
+    }
+  }
+}
+
+.right-wrapper {
+  .product-wrapper {
+    padding: 0px;
+  }
+
+  .product-grid-item {
+    width: 25%;
+  }
+}
+
+.product-price {
+  font-weight: 600;
+  font-size: 14px;
+  color: $primary-black;
+}
+
+.product-card-inner-wrapper {
+  .upper-wrapper {
+    .wishlist-btn-heart {
+      position: absolute;
+      // top: 4%;
+      left: 5%;
+      z-index: 99;
+    }
+
+    .sale-tag {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 99;
+      transform: translate(-100%, -100%);
+    }
+
+    .sold-tag {
+      width: 100%;
+      background: rgba(128, 128, 128, 0.8);
+      text-align: center;
+      position: absolute;
+      top: 30%;
+      transform: translateY(-30%);
+      z-index: 9999999;
+      left: 0%;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 10px;
+      color: $primary-white;
+    }
+  }
+}
+.cart-box{
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
